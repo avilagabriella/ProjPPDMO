@@ -21,10 +21,10 @@ const LoginScreen: React.FC = () => {
   return (
     <View style={styles.container}>
       <Image 
-        source={{ uri: 'https://via.placeholder.com/150' }} 
+        source={{ uri: './assets/LOGO02.PNG' }} 
         style={styles.image} 
       />
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Faça login para entrar</Text>
       <TextInput
         style={styles.input}
         placeholder="Username"
@@ -47,7 +47,7 @@ const LoginScreen: React.FC = () => {
       </View>
       {error && <Text style={styles.error}>{error}</Text>}
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttonText}>Login</Text>
+        <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
     </View>
   );
@@ -61,8 +61,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#1E1E1E',
   },
   image: {
-    width: 150,
-    height: 150,
+    width: 300,
+    height: 300,
     resizeMode: 'contain',
     alignSelf: 'center',
     marginBottom: 30,
